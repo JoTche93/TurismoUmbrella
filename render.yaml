@@ -1,11 +1,6 @@
 services:
-  - type: web
+  - type: static
     name: turismo-umbrella
-    env: node
     plan: free
     buildCommand: "cd project && npm install && npm run build"
-    startCommand: "cd project && npm run preview -- --port $PORT"
-    envVars:
-      - key: NODE_ENV
-        value: production
     staticPublishPath: project/dist

@@ -1,6 +1,0 @@
-services:
-  - type: static
-    name: turismo-umbrella
-    plan: free
-    buildCommand: "npm install && npm run build"
-    staticPublishPath: dist
